@@ -107,8 +107,8 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
 	<configuration>
-		<source>1.8</source>
-                <target>1.8</target>
+		<source>1.11</source>
+                <target>1.11</target>
 		<suiteXmlFiles>
 			<suiteXmlFile>testfarm.xml</suiteXmlFile>
 		</suiteXmlFiles>
