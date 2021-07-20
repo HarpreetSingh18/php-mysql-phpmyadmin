@@ -24,7 +24,7 @@ public class remote {
 	
 	private static RemoteWebDriver driver;
 	public String baseUrl = "https://www.google.co.in/";  
-	  @Test
+	  @Test(priority = 0)
 	  public void setUp() throws MalformedURLException, InterruptedException {
 	    String myProjectARN = "arn:aws:devicefarm:us-west-2:566333853275:testgrid-project:6ce5c098-b2be-44de-bcb7-d1dfdb7b59c6";
 	    DeviceFarmClient client  = DeviceFarmClient.builder().region(Region.US_WEST_2).build();
