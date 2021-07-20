@@ -109,7 +109,7 @@
           <version>2.22.1</version>
 	<configuration>
 		<suiteXmlFiles>
-			<suiteXmlFile>C:\Users\Test\eclipse-workspace\Jenkins\test.xml</suiteXmlFile>
+			<suiteXmlFile>test.xml</suiteXmlFile>
 		</suiteXmlFiles>
 	</configuration>  
         </plugin>
