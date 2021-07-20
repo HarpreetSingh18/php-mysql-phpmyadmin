@@ -69,7 +69,7 @@ public class remote {
 		  driver.findElement(By.xpath("//a[contains(text(), 'Back')]"));
 		  System.out.println("Back To HomePage");
 		  Thread.sleep(4000);
-		  //driver.quit();
+		  driver.quit();
 	  }
 	  
 	
@@ -78,7 +78,7 @@ public class remote {
 	  @AfterGroups
 	  void tearDown() {
 	    // make sure to close your WebDriver:
-	    driver.quit();
+	    //driver.quit();
 	  }
 
 }
