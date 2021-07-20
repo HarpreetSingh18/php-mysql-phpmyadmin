@@ -43,9 +43,33 @@ public class remote {
 		
 	    WebDriver driver = new RemoteWebDriver(testGridUrl, cap);
 	    driver.manage().window().maximize(); 
-		  driver.get("https://www.edureka.co/");
+		  driver.manage().window().maximize(); 
+		  driver.get("http://34.201.99.203:30001/");
 		  Thread.sleep(4000);
-		  driver.quit();
+		  driver.findElement(By.xpath("//header/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]")).click();
+		  System.out.println("Clicked on Add new Employee");
+		  Thread.sleep(4000);
+		  driver.findElement(By.xpath("//input[@name='name']")).click();
+		  driver.findElement(By.xpath("//input[@name='name']")).sendKeys("Yogesh Nain");
+		  System.out.println("Added name");
+		  Thread.sleep(4000);
+		  driver.findElement(By.xpath("//textarea[@name='address']")).click();
+		  driver.findElement(By.xpath("//textarea[@name='address']")).sendKeys("97 Devilal Colony TCP 2 Hisar Cantt Hisar Haryana 125006");
+		  System.out.println("Added Address");
+		  Thread.sleep(4000);
+		  driver.findElement(By.xpath("//input[@name='salary']")).click();
+		  driver.findElement(By.xpath("//input[@name='salary']")).sendKeys("15000");
+		  System.out.println("Entered Salary");
+		  Thread.sleep(4000);
+		  driver.findElement(By.xpath("//input[@type='submit']")).click();
+		  System.out.println("Record Added");
+		  Thread.sleep(4000);
+		  driver.findElement(By.xpath("//a[@href='read.php?id=4']")).click();
+		  System.out.println("View Record of Sandeep");
+		  Thread.sleep(4000);
+		  driver.findElement(By.xpath("//a[contains(text(), 'Back')]"));
+		  System.out.println("Back To HomePage");
+		  Thread.sleep(4000);
 	  }
 	  
 	
