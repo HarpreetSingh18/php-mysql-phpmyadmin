@@ -43,7 +43,7 @@ public class remote {
 		
 	    WebDriver driver = new RemoteWebDriver(testGridUrl, cap);
 	    driver.manage().window().maximize(); 
-		  driver.get("http://34.201.99.203:30001/");
+		  driver.get("http://18.117.131.253:30001/");
 		  Thread.sleep(4000);
 		  driver.findElement(By.xpath("//header/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]")).click();
 		  System.out.println("Clicked on Add new Employee");
